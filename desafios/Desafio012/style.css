@@ -44,11 +44,12 @@ header a:hover, footer a:hover {
 
 section {
     font-family: var(--fontetexto);
-    font-size: 3.5vh;
+    font-size: 3.5vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    
     
 }
 
@@ -77,6 +78,7 @@ section {
 
 p {
     margin-bottom: 60px;
+    
 }
 
 .destaque {
