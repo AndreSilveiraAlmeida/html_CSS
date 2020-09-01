@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        
+        table {
+            width: 600px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            
+        }
+
+        td, th {
+            border: 1px solid black;
+            text-align: left;
+        }
+
+        caption {
+            font-weight: bolder;
+            font-size: 1.5em;
+            text-align: center;
+            background-color: rgb(236, 236, 236);
+            padding: 5px;
+        }
+        
+        thead {
+            background-color: #636363;
+            color: white;
+        }
+
+        tfoot {
+            background-color: #636363;
+            color: white;
+            font-weight: bolder;
+        }
+
+        /*tbody > tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: #ffffff;
+        }*/
+
+        col.c1 {
+            background-color: #E3C386;
+        }
+        col.c2 {
+            background-color: #DEA12F;
+        }
+        col.c3 {
+            background-color: #AC7C24;
+        }
+
+        #tabela2{
+            width: 450px;
+        }
+
+        #tabela2  thead  th {
+            background-color: white;
+            color: black;
+            text-align: center ;
+            font-weight: bold;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        #tabela2 td {
+            
+            padding-left: 5px;
+            vertical-align: middle;
+            text-align: left;
+            
+        }
+
+        #tabela3, #tabela4 {
+            width: 350px ;
+            border-collapse: separate;
+            border: 2px transparent;
+            
+        }
+
+        #tabela3 td,#tabela4 td {
+            height: 50px;
+            text-align: center;
+        }
+
+       #tabela5 {
+           width: 350px;
+           height: 280px;
+       }       
+
+        #tabela5 td {
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        #tabela6 {
+            width: 275px;
+            height: 200px;
+            border-collapse: separate;
+            border: transparent;
+        }
+
+        #tabela6 td {
+            text-align:center;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <table>
+        <caption>
+            População das Unidade Federativas
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col"> Cidade</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.168.791</td>
+                
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14.873.064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>11.433.957</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <th scope="row">Total</th>
+            <td>110.659.804</td>
+        </tfoot>
+    </table>
+
+    <h2>Segunda Tabela</h2>
+    <table id="tabela2">
+        <caption>
+
+        </caption>
+        <thead>
+            <th>Grupos</th>
+            <th>Nomes</th>
+            <th colspan="3">Filmes Favoritos</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Mulheres</td>
+                <td>Ana maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Homens</td>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveos</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Terceira Tabela</h2>
+
+    <table id="tabela3">
+       
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="2">3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td colspan="3">8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td rowspan="2">10</td>
+                <td colspan="2">11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <h2>Quarta Tabela</h2>
+
+    <table id="tabela4">
+                
+        <tbody>
+            <tr>
+                <td colspan="4">A</td>
+                <td rowspan="4">B</td>
+            </tr>
+            <tr>
+                <td rowspan="4">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>L</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td colspan="4">N</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Quinta Tabela</h2>
+
+    <table id="tabela5">
+        <thead>
+            <tr>
+                <td rowspan="2">Área</td>
+                <td rowspan="2">Disciplinas</td>
+                <td colspan="2">Notas</td>
+                <td rowspan="2">Média</td>
+            </tr>
+            <tr> 
+                <td>Nota1</td>
+                <td>Nota2</td>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">Exatas</td>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            
+            <tr>
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <thead>
+                <tr>
+                    <td colspan="4" style="text-align: left; padding-left: 5px;">Média de Exatas</td>
+                    <td>0.0</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Humanas</td>
+                    <td>História</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" style="text-align: left; padding-left: 5px;">Média Humanas</td>
+                        <td>0.0</td>
+                    </tr>
+                </tfoot>
+                
+
+            </tbody>
+        </tbody>
+    
+        
+    </table>
+
+    <h2>Sexta Tabela</h2>
+
+    <table id="tabela6">
+        <colgroup>
+            <col class="c1">
+            <col class="c2" span="2">
+            <col class="c3">
+            <col class="c1">
+
+        </colgroup>
+        <tbody>
+            <tr>
+                <td>1A</td>
+                <td>1B</td>
+                <td>1C</td>
+                <td>1D</td>
+                <td>1E</td>
+            </tr>
+            <tr>
+                <td>2A</td>
+                <td>2B</td>
+                <td>2C</td>
+                <td>2D</td>
+                <td>2E</td>
+            </tr>
+            <tr>
+                <td>3A</td>
+                <td>3B</td>
+                <td>3C</td>
+                <td>3D</td>
+                <td>3E</td>
+            </tr>
+            <tr>
+                <td>4A</td>
+                <td>4B</td>
+                <td>4C</td>
+                <td>4D</td>
+                <td>4E</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
